@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "206619ea-eddd-4f4c-aec8-83c524e8117a",
+		"name": "HealthCareAppAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Drug",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Manufacturer\": \"SPC\",\n    \"Name\": \"Repace50\",\n    \"ScientificName\": \"Losartan Potassium\",\n    \"Unit\": \"mg\",\n    \"Dosage\": \"50\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/drugs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drugs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drugs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drugs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByDrugId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drugs/5e6c5980ebd2b65b50a50b16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drugs",
+								"5e6c5980ebd2b65b50a50b16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Manufacturer\": \"J&K Drugs\",\n    \"Name\": \"Repace50\",\n    \"ScientificName\": \"Losartan Potassium\",\n    \"Unit\": \"mg\",\n    \"Dosage\": 50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/drugs/5e6c560aebd2b65b50a50b15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drugs",
+								"5e6c560aebd2b65b50a50b15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drugs/5e6c560aebd2b65b50a50b15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drugs",
+								"5e6c560aebd2b65b50a50b15"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Dulipa\",\n    \"LastName\": \"Marapana\",\n    \"RegistrationCode\": \"DOC_REG_EA_669\",\n    \"Specialty\": \"Orthology\",\n    \"Age\": 33,\n    \"Address\": \"586/A, Ratnapura road, Panadura\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/doctors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/doctors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByDoctorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/doctors/5e6d421066733a03fc7c8725",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctors",
+								"5e6d421066733a03fc7c8725"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Saman\",\n    \"LastName\": \"Kuruvita\",\n    \"RegistrationCode\": \"DOC_REG_EA_123\",\n    \"Specialty\": \"Cardiology\",\n    \"Age\": 25,\n    \"Address\": \"255/B, Maha wewa, Kurukulawa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/doctors/5e6d421066733a03fc7c8725",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctors",
+								"5e6d421066733a03fc7c8725"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/doctors/5e6d42bf66733a03fc7c8727",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctors",
+								"5e6d42bf66733a03fc7c8727"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Indika\",\n    \"LastName\": \"Peiris\",\n    \"Birthday\": \"2016-10-05T14:48:00.000\",\n    \"Age\": 36,\n    \"Disease\": \"Heavy Cold\",\n    \"Address\": \"586/G, Battaramulla road, Kaduwela\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByPatientId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/patients/5e6d50c2739c1328900309b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients",
+								"5e6d50c2739c1328900309b2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Sumana\",\n    \"LastName\": \"Peiris\",\n    \"Birthday\": \"2016-10-05T14:48:00.000\",\n    \"Age\": 36,\n    \"Disease\": \"Heavy Cold\",\n    \"Address\": \"586/G, Battaramulla road, Kaduwela\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/patients/5e6d50c2739c1328900309b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients",
+								"5e6d50c2739c1328900309b2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/patients/5e6d50c2739c1328900309b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients",
+								"5e6d50c2739c1328900309b2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
